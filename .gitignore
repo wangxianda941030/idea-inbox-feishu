@@ -1,0 +1,24 @@
+# 用户私有配置（含飞书 token）
+config/config.json
+
+# 灵感文件（隐私，不提交）
+inbox/*
+!inbox/.gitkeep
+!inbox/README.md
+
+# 运行产物
+out/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

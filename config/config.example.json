@@ -1,0 +1,24 @@
+{
+  "_comment": "复制本文件为 config.json 填入你自己的值。config.json 已被 .gitignore 忽略，不会泄露。",
+
+  "inbox_dir": "./inbox",
+  "_comment_inbox": "灵感投递箱文件夹。把和AI聊天/灵感随手存成 txt/md 丢进来即可，格式不限。",
+
+  "feishu": {
+    "_comment": "飞书多维表格信息。运行 `python -m ideainbox setup-base` 会自动建表并回填。",
+    "base_token": "",
+    "tables": {
+      "research": { "table_id": "", "name": "研究素材库" },
+      "content": { "table_id": "", "name": "内容生产库" },
+      "review": { "table_id": "", "name": "发布复盘库" }
+    },
+    "base_url": ""
+  },
+
+  "persona": {
+    "_comment": "你的创作者人设与风格，AI 提炼选题时会参考。改成你自己的。",
+    "name": "浪人Banks",
+    "domain": "AI / 科技 / 商业观察类短视频（抖音 + 小红书）",
+    "style": "结论先行、抓预期差、带反方观点、不落身份刻板印象、锋利但克制"
+  }
+}

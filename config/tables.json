@@ -1,0 +1,50 @@
+{
+  "_comment": "三张表的字段定义。setup-base 按此建表。可增删字段，但改动后需与 config 及提炼逻辑保持一致。",
+
+  "research": {
+    "name": "研究素材库",
+    "fields": [
+      { "name": "研究主题", "type": "text" },
+      { "name": "核心判断", "type": "text" },
+      { "name": "证据", "type": "text" },
+      { "name": "来源", "type": "text" },
+      { "name": "来源链接", "type": "text" },
+      { "name": "来源等级", "type": "select", "options": [{"name": "官方数据"}, {"name": "论文"}, {"name": "媒体"}] },
+      { "name": "反方观点", "type": "text" },
+      { "name": "研究日期", "type": "datetime" }
+    ]
+  },
+
+  "content": {
+    "name": "内容生产库",
+    "fields": [
+      { "name": "选题", "type": "text" },
+      { "name": "核心钩子", "type": "text" },
+      { "name": "抖音30秒", "type": "text" },
+      { "name": "抖音90秒", "type": "text" },
+      { "name": "小红书标题", "type": "text" },
+      { "name": "小红书正文", "type": "text" },
+      { "name": "封面文案", "type": "text" },
+      { "name": "关联研究", "type": "text" },
+      { "name": "状态", "type": "select", "options": [{"name": "待制作"}, {"name": "已拍"}, {"name": "已发布"}] },
+      { "name": "日期", "type": "datetime" }
+    ]
+  },
+
+  "review": {
+    "name": "发布复盘库",
+    "fields": [
+      { "name": "发布时间", "type": "datetime" },
+      { "name": "平台", "type": "select", "options": [{"name": "抖音"}, {"name": "小红书"}, {"name": "视频号"}, {"name": "B站"}] },
+      { "name": "选题", "type": "text" },
+      { "name": "链接", "type": "text" },
+      { "name": "曝光", "type": "number" },
+      { "name": "完播率", "type": "text" },
+      { "name": "点赞", "type": "number" },
+      { "name": "收藏", "type": "number" },
+      { "name": "评论", "type": "number" },
+      { "name": "新增关注", "type": "number" },
+      { "name": "结论", "type": "text" }
+    ]
+  }
+}

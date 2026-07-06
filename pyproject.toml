@@ -1,0 +1,19 @@
+[project]
+name = "idea-inbox-feishu"
+version = "1.0.0"
+description = "灵感投递箱：把与 AI 聊出的灵感自动提炼、沉淀进飞书多维表格"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["feishu", "lark", "bitable", "idea", "content", "creator", "inbox"]
+dependencies = []
+
+[project.scripts]
+ideainbox = "ideainbox.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ideainbox"]

@@ -6,6 +6,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 
+> ⚠️ **重要前提：本工具需要配合一个「AI Agent」使用，它本身不内置 AI。**
+>
+> 这里说的不是普通的 AI 聊天（网页版 ChatGPT 只会跟你对话，不能自己读文件、跑命令）。
+> 你需要的是能**读取文件、执行命令、自主跑完多步流程**的 **AI Agent**，例如：
+> **WorkBuddy（自动化）、Codex、Claude Code、Cursor、Cline** 等。
+>
+> 最省事的用法：把**本仓库链接 + README** 丢给你的 AI Agent，让它照着帮你 clone、配置、跑通全流程。
+> 提炼灵感这一步由 Agent 完成，**你不需要自己填任何 AI 的 API key**。
+> （只有想脱离 Agent、做成纯脚本定时全自动时，才需要自己接一个 LLM API，见 [docs/automation.md](./docs/automation.md)。）
+
 ---
 
 ## 这个工具解决什么问题
@@ -26,11 +36,11 @@
 
 ## 它的设计哲学（重要）
 
-**生成交给 AI，管理交给飞书，机械活交给脚本。** 三者分工：
+**生成交给 AI Agent，管理交给飞书，机械活交给脚本。** 三者分工：
 
 | 角色 | 负责 |
 |---|---|
-| 🤖 **AI** | 读懂你那段乱糟糟的灵感，提炼成选题、写脚本 —— 这是 AI 最擅长的 |
+| 🤖 **AI Agent** | 读懂你那段乱糟糟的灵感，提炼成选题、写脚本，并驱动整个流程 —— 这是 Agent 最擅长的 |
 | 🗂️ **飞书多维表格** | 沉淀、检索、状态追踪（待制作→已拍→已发布）、数据回流 |
 | ⚙️ **本工具（脚本）** | 扫描文件夹、结构化写入飞书、归档已处理文件 |
 
@@ -51,6 +61,8 @@
 ---
 
 ## 🚀 快速开始
+
+> 🔰 **新手/不熟命令行？** 先看 [QUICKSTART.md](./QUICKSTART.md) —— 教你把链接丢给 AI Agent 一句话跑通。下面是标准手动流程。
 
 ### 0. 前置
 
